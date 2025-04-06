@@ -1,5 +1,5 @@
 {
-  "Namespace": "Hexa.NET.ImGui",
+  "Namespace": "Dalamud.Bindings.ImGui",
   "ApiName": "ImGuiP",
   "LibName": "cimgui",
   "ImportType": "FunctionTable",
@@ -89,7 +89,7 @@
     "ImU64": "ulong",
     "ImWchar16": "ushort",
     "ImWchar32": "uint",
-    "ImWchar": "uint",
+    "ImWchar": "ushort",
     "ImDrawIdx": "ushort",
     "ImGuiKeyChord": "int",
     "ImGuiKeyRoutingIndex": "short",

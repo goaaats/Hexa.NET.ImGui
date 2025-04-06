@@ -1,5 +1,5 @@
 {
-  "Namespace": "Hexa.NET.ImPlot",
+  "Namespace": "Dalamud.Bindings.ImPlot",
   "ApiName": "ImPlot",
   "LibName": "cimplot",
   "ImportType": "FunctionTable",
@@ -120,5 +120,5 @@
   "AllowedFunctions": [],
   "AllowedTypes": [],
   "AllowedEnums": [],
-  "Usings": [ "System.Numerics", "Hexa.NET.ImGui" ]
+  "Usings": [ "System.Numerics", "Dalamud.Bindings.ImGui" ]
 }

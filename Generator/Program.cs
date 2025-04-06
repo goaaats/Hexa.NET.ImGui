@@ -1,5 +1,6 @@
 ﻿//#define BackendsOnly
 #define DisableBackends
+#define DisableNodes
 //#define NodeEditorOnly
 
 namespace Generator
@@ -29,11 +30,11 @@ namespace Generator
 
         private const string ImGuiNodeEditorHeader = "imgui-node-editor/imgui_node_editor.h";
 
-        private const string ImGuiOutputPath = "../../../../Hexa.NET.ImGui/Generated";
+        private const string ImGuiOutputPath = "../../../../../../imgui/Dalamud.ImGui/Generated";
 
-        private const string ImGuizmoOutputPath = "../../../../Hexa.NET.ImGuizmo/Generated";
-        private const string ImNodesOutputPath = "../../../../Hexa.NET.ImNodes/Generated";
-        private const string ImPlotOutputPath = "../../../../Hexa.NET.ImPlot/Generated";
+        private const string ImGuizmoOutputPath = "../../../../../../imgui/Dalamud.ImGuizmo/Generated";
+        private const string ImNodesOutputPath = "../../../../../../imgui/Dalamud.ImNodes/Generated";
+        private const string ImPlotOutputPath = "../../../../../../imgui/Dalamud.ImPlot/Generated";
 
         private const string ImGuiNodeEditorOutputPath = "../../../../Hexa.NET.ImGuiNodeEditor/Generated";
         private const string ImGuiBackendsOutputPath = "../../../../Hexa.NET.ImGui.Backends/Generated";
@@ -63,7 +64,9 @@ namespace Generator
 
             Generate([CImGuizmoHeader], CImGuizmoConfig, ImGuizmoOutputPath, metadata, out _, InternalsGenerationType.BothOrDontCare);
             Generate([CImPlotHeader], CImPlotConfig, ImPlotOutputPath, metadata, out var imPlotMetadata, InternalsGenerationType.BothOrDontCare);
+#if !DisableNodes
             Generate([CImNodesHeader], CImNodesConfig, ImNodesOutputPath, metadata, out _, InternalsGenerationType.BothOrDontCare);
+#endif
 #else
             Generate([CImGuiHeader], CImGuiConfig, ImGuiOutputPath, null, out var metadata, InternalsGenerationType.NoInternals);
 #endif

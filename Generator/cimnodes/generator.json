@@ -1,5 +1,5 @@
 {
-  "Namespace": "Hexa.NET.ImNodes",
+  "Namespace": "Dalamud.Bindings.ImNodes",
   "ApiName": "ImNodes",
   "LibName": "cimnodes",
   "ImportType": "FunctionTable",
@@ -102,5 +102,5 @@
   "AllowedFunctions": [],
   "AllowedTypes": [],
   "AllowedEnums": [],
-  "Usings": [ "System.Numerics", "Hexa.NET.ImGui" ]
+  "Usings": [ "System.Numerics", "Dalamud.Bindings.ImGui" ]
 }

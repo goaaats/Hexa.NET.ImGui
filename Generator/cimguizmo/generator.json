@@ -1,5 +1,5 @@
 {
-  "Namespace": "Hexa.NET.ImGuizmo",
+  "Namespace": "Dalamud.Bindings.ImGuizmo",
   "ApiName": "ImGuizmo",
   "LibName": "cimguizmo",
   "ImportType": "FunctionTable",
@@ -101,5 +101,5 @@
   "AllowedFunctions": [],
   "AllowedTypes": [],
   "AllowedEnums": [],
-  "Usings": [ "System.Numerics", "Hexa.NET.ImGui" ]
+  "Usings": [ "System.Numerics", "Dalamud.Bindings.ImGui" ]
 }

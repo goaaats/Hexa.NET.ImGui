@@ -475,6 +475,12 @@ namespace Generator
                 if (ArraySize == 0)
                     ArraySize = ParseSizeString(sizePart, enums);
                 Name = Name.Substring(0, startBracket);
+
+                if (Type == "bool")
+                {
+                    Type = "byte";
+                    //throw new Exception(Name);
+                }
             }
             IsFunctionPointer = Type.IndexOf('(') != -1;
 
