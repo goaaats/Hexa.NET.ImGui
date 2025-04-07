@@ -30,11 +30,11 @@ namespace Generator
 
         private const string ImGuiNodeEditorHeader = "imgui-node-editor/imgui_node_editor.h";
 
-        private const string ImGuiOutputPath = "../../../../../../imgui/Dalamud.ImGui/Generated";
+        private const string ImGuiOutputPath = "../../../../../../imgui/Dalamud.Bindings.ImGui/Generated";
 
-        private const string ImGuizmoOutputPath = "../../../../../../imgui/Dalamud.ImGuizmo/Generated";
-        private const string ImNodesOutputPath = "../../../../../../imgui/Dalamud.ImNodes/Generated";
-        private const string ImPlotOutputPath = "../../../../../../imgui/Dalamud.ImPlot/Generated";
+        private const string ImGuizmoOutputPath = "../../../../../../imgui/Dalamud.Bindings.ImGuizmo/Generated";
+        private const string ImNodesOutputPath = "../../../../../../imgui/Dalamud.Bindings.ImNodes/Generated";
+        private const string ImPlotOutputPath = "../../../../../../imgui/Dalamud.Bindings.ImPlot/Generated";
 
         private const string ImGuiNodeEditorOutputPath = "../../../../Hexa.NET.ImGuiNodeEditor/Generated";
         private const string ImGuiBackendsOutputPath = "../../../../Hexa.NET.ImGui.Backends/Generated";
